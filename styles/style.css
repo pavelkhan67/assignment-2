@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&family=Work+Sans:wght@600;700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+}
+
+/* Header section */
+header {
+    background-color: #FF900E1A;
+}
+
+/* nav bar */
+nav {
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h2 {
+    padding: 50px 0 0 0;
+}
+
+nav ul {
+    padding: 60px 0 0 0;
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+/* Page intro section */
+.banner-intro-image {
+    margin: 100px auto;
+}
+
+.banner-intro {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.text-primary {
+    font-size: 12px;
+}
+
+.button {
+    padding: 32px 0 50px 0;
+}
+
+.primary-btn {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0;
+    color: white;
+    background-color: #FF900E;
+}
+
+.banner-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+/* Main section */
+/* List of feature section */
+.list-of-our-feature, .feature-love-info-image{
+    padding: 0 150px;
+    gap: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.team-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.team-images img {
+    width: 242px;
+    height: 242px;
+}
+
+.feature-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.feature-info .title-main {
+    padding-bottom: 24px;
+    font-size: 30px;
+    color: #131313;
+}
+.info-span1{
+    color: #727272;
+}
+.info-span2{
+    color: #FF900E;
+}
+/* Feature you will love section */
+.feature-love-info-image{
+    position: relative;
+    padding: 100px 120px;
+    gap: 50px;
+    width: 100%;
+    display: flex;
+}
+.title-secondary{
+    padding: 5px 0 ;
+    border-left: 3px solid #FF900E;
+}
+.text-primary{
+    padding-top: 30px;
+    width: 100%;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    /* width: 80%; */
+    border: 0;
+    border-radius: 2px;
+    margin-top: 20px;
+    padding: 15px 15px 15px 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.feature-love-image img{
+    height: 680px;
+}
+.secondary-btn{
+    position: absolute;
+    left: 630px;
+    top: 738px;
+    width: fit-content;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 0;
+    color: white;
+    background-color: #FF900E;
+}
+.secondary-btn .year{
+    font-size: 30px;
+    font-weight: 600;
+}
+.secondary-btn .exp{
+    font-size: 15px;
+    font-weight: 400;
+}
+/* Facts section */
+.some-facts{
+    width: 100%;
+    padding: 0 120px;
+}
+.facts{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.fact{
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 150px;
+    padding: 20px;
+}
+.fact-number{
+   color: #424242;
+   font-weight: 600;
+   font-size: 20px;
+   padding: 5px 0;
+}
+.fact-name{
+   color: #727272;
+   font-size: 14px;
+}
+/* Our sopnsors section */
+.our-sponspors{
+    width: 100%;
+    padding: 100px 100px 0 100px;
+    text-align: center;
+}
+.sponsor-logos{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Feedback part */
+.feedback{
+    background-color: rgba(241, 234, 226, 0.396);
+    padding: 100px 100px;
+    text-align: center;
+}
+.feedback >h2{
+    padding-bottom: 50px;
+}
+.customers{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+}
+
+.customer img{
+    height: 100px;
+    width: 100px;
+}
+.fill{
+    color: #FF900E;
+}
+.empty{
+    color: #72727280;
+}
+/* Footer part */
+
+.footer{
+    justify-content: center;
+    text-align: center;
+    background-color: #FFF4E7;
+    width: 80%;
+    height: fit-content;
+    padding: 0 30px 30px 30px;
+    margin: 100px auto;
+    border-radius: 8px;
+}
