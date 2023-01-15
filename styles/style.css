@@ -218,9 +218,13 @@ nav ul {
 }
 .sponsor-logos{
     padding: 50px 0;
+    gap: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.sponsor-logos img{
+    width: 150px;
 }
 
 /* Feedback part */
@@ -287,7 +291,7 @@ nav ul {
         }
         .feature-love-info-image{
             flex-direction: column;
-            width: 90%;
+            width: 85%;
             margin: 0 auto;
             padding: 0;
         }
@@ -299,7 +303,8 @@ nav ul {
             width: 100%;
         }
         .secondary-btn{
-            left: 35%;
+            left: 25%;
+            width: 50%;
             top: auto;   
         }
         .some-facts{
@@ -309,7 +314,7 @@ nav ul {
             margin: 0 auto;
         }
         .facts, .sponsor-logos{
-            gap: 40px;
+            gap: 60px;
             flex-wrap: wrap;
             justify-content: space-around;
         }
@@ -361,13 +366,14 @@ nav ul {
         width: 100%;
     }
     .secondary-btn{
-        left: 33%;
-        top:auto;
+        left: 25%;
+        width: 50%;
+        top: auto;
     }
     .facts, .sponsor-logos{
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
     }
     .our-sponspors{
         width: 90%;
