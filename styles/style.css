@@ -186,10 +186,10 @@ nav ul {
     border-radius: 5px;
     width: 150px;
     padding: 20px;
-    transition: transform 2s ease-out .1s;
+    transition: transform 2s linear .1s;
 }
 @keyframes example {
-    0%   {border-radius: 8%; background-color: rgba(248, 239, 225, 0.499);}
+    0%   {border-radius: 8%; background-color: rgba(176, 172, 166, 0.499);}
     25%  {border-radius: 16%; background-color: rgba(248, 239, 225, 0.601);}
     50%  {border-radius: 30%; background-color: rgba(248, 239, 225, 0.759);}
     100% {border-radius: 50%; background-color: rgba(248, 239, 225, 0.927);}
@@ -197,7 +197,7 @@ nav ul {
 .fact:hover{
     animation-name: example;
     animation-duration: 3s ;
-    transform:scale(.75) ;
+    transform:scale(.85) ;
 }
 .fact-number{
    color: #424242;
@@ -213,7 +213,7 @@ nav ul {
 /* Our sopnsors section */
 .our-sponspors{
     width: 100%;
-    padding: 100px 100px 0 100px;
+    padding: 100px 100px 50px 100px;
     text-align: center;
 }
 .sponsor-logos{
@@ -226,7 +226,7 @@ nav ul {
 /* Feedback part */
 .feedback{
     background-color: rgba(241, 234, 226, 0.396);
-    padding: 100px 100px;
+    padding: 50px 100px 100px 100px;
     text-align: center;
 }
 .feedback >h2{
