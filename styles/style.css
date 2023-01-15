@@ -190,9 +190,9 @@ nav ul {
 }
 @keyframes example {
     0%   {border-radius: 8%; background-color: rgba(176, 172, 166, 0.499);}
-    25%  {border-radius: 16%; background-color: rgba(248, 239, 225, 0.601);}
-    50%  {border-radius: 30%; background-color: rgba(248, 239, 225, 0.759);}
-    100% {border-radius: 50%; background-color: rgba(248, 239, 225, 0.927);}
+    25%  {border-radius: 16%; background-color: rgba(187, 184, 178, 0.601);}
+    50%  {border-radius: 30%; background-color: rgba(151, 148, 142, 0.759);}
+    100% {border-radius: 50%; background-color: rgba(166, 147, 126, 0.927);}
   }
 .fact:hover{
     animation-name: example;
@@ -224,7 +224,8 @@ nav ul {
     align-items: center;
 }
 .sponsor-logos img{
-    width: 150px;
+    width: 120px;
+    filter: grayscale(100%);
 }
 
 /* Feedback part */
