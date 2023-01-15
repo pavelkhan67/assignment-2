@@ -25,7 +25,7 @@ nav {
 }
 
 nav h2 {
-    padding: 50px 0 0 0;
+    padding: 50px 0 30px 0;
 }
 
 nav ul {
@@ -79,14 +79,16 @@ nav ul {
 /* List of feature section */
 .list-of-our-feature, .feature-love-info-image{
     padding: 0 150px;
-    gap: 50px;
+    gap: 100px;
     width: 100%;
     display: flex;
 }
 
 .team-images {
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
     gap: 20px;
 }
 .team-images img {
@@ -95,6 +97,7 @@ nav ul {
 }
 
 .feature-info {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,47 +107,55 @@ nav ul {
     font-size: 30px;
     color: #131313;
 }
-.info-span1{
+.title-main .info-span1{
     color: #727272;
 }
-.info-span2{
+.title-main .info-span2{
     color: #FF900E;
 }
+
 /* Feature you will love section */
 .feature-love-info-image{
     position: relative;
     padding: 100px 120px;
     gap: 50px;
     width: 100%;
+    height: 910px;
     display: flex;
 }
+.feature-love-info{
+    width: 50%;
+    height: 680px;
+}
 .title-secondary{
-    padding: 5px 0 ;
+    padding: 5px 0 0 5px ;
     border-left: 3px solid #FF900E;
 }
 .text-primary{
     padding-top: 30px;
     width: 100%;
 }
+
 .feature{
-    display: flex;
-    flex-direction: column;
-    /* width: 80%; */
+    width: 100%;
     border: 0;
-    border-radius: 2px;
+    border-radius: 5px;
     margin-top: 20px;
     padding: 15px 15px 15px 10px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+}
+.feature-love-image{
+    width: 50%;
 }
 .feature-love-image img{
     height: 680px;
 }
 .secondary-btn{
     position: absolute;
-    left: 630px;
-    top: 738px;
+    left: 49%;
+    top: 78%;
     width: fit-content;
-    padding: 40px 30px;
+    padding: 30px;
     border-radius: 8px;
     border: 0;
     color: white;
@@ -158,6 +169,7 @@ nav ul {
     font-size: 15px;
     font-weight: 400;
 }
+
 /* Facts section */
 .some-facts{
     width: 100%;
@@ -171,9 +183,21 @@ nav ul {
 .fact{
     text-align: center;
     border: 1px solid #FF900E;
-    border-radius: 8px;
+    border-radius: 5px;
     width: 150px;
     padding: 20px;
+    transition: transform 2s ease-out .1s;
+}
+@keyframes example {
+    0%   {border-radius: 8%; background-color: rgba(248, 239, 225, 0.499);}
+    25%  {border-radius: 16%; background-color: rgba(248, 239, 225, 0.601);}
+    50%  {border-radius: 30%; background-color: rgba(248, 239, 225, 0.759);}
+    100% {border-radius: 50%; background-color: rgba(248, 239, 225, 0.927);}
+  }
+.fact:hover{
+    animation-name: example;
+    animation-duration: 3s ;
+    transform:scale(.75) ;
 }
 .fact-number{
    color: #424242;
@@ -185,6 +209,7 @@ nav ul {
    color: #727272;
    font-size: 14px;
 }
+
 /* Our sopnsors section */
 .our-sponspors{
     width: 100%;
@@ -197,6 +222,7 @@ nav ul {
     justify-content: space-between;
     align-items: center;
 }
+
 /* Feedback part */
 .feedback{
     background-color: rgba(241, 234, 226, 0.396);
@@ -224,8 +250,8 @@ nav ul {
 .empty{
     color: #72727280;
 }
-/* Footer part */
 
+/* Footer part */
 .footer{
     justify-content: center;
     text-align: center;
@@ -235,4 +261,124 @@ nav ul {
     padding: 0 30px 30px 30px;
     margin: 100px auto;
     border-radius: 8px;
+}
+
+/* Responsive for Medium device */
+@media screen and (max-width:992px){
+        /* Headder Responsive */
+        nav{
+            padding: 0 50px;
+        }
+        .banner-intro{
+            width:90%;
+        }
+        .banner-image, .banner-image img{
+            width: 100%;
+        }
+    
+        /* Main Part Responsive */
+        .list-of-our-feature{
+            flex-direction: column;
+            width: 90%;
+            padding: 0;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+        }
+        .feature-love-info-image{
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .feature-love-info, .feature-love-image{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .feature-love-image img{
+            width: 100%;
+        }
+        .secondary-btn{
+            left: 35%;
+            top: auto;   
+        }
+        .some-facts{
+            text-align: center;
+            padding: 700px 0 0 0 ;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .facts, .sponsor-logos{
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .our-sponspors{
+            width: 80%;
+            padding: 50px 0 0 0 ;
+            margin: 0 auto;
+        }
+    
+        /* Footer Responsive */
+        /* Already Responsive  */
+    
+}
+
+/* Responsive for Mobile device */
+@media screen and (max-width:688px) {
+
+    /* Headder Responsive */
+    nav, nav ul{
+        padding: 0 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-intro{
+        width:90%;
+    }
+    .banner-image, .banner-image img{
+        width: 100%;
+    }
+
+    /* Main Part Responsive */
+    .list-of-our-feature{
+        flex-direction: column;
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .team-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-love-info-image{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .feature-love-image img{
+        width: 100%;
+    }
+    .secondary-btn{
+        left: 33%;
+        top:auto;
+    }
+    .facts, .sponsor-logos{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .our-sponspors{
+        width: 90%;
+        padding: 50px 0 0 0 ;
+        margin: 0 auto;
+    }
+    
+    .customers{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* Footer Responsive */
+    /* Already Responsive  */ 
 }
